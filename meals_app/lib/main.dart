@@ -1,27 +1,15 @@
 import "package:flutter/material.dart";
+import 'package:meals_app/categories_screen.dart';
 
-main() => runApp(HomePage());
+main() => runApp(MyApp());
 
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("DeliMeals"),
-        ),
-        body: Container(
-          child: Center(
-            child: Text("Working"),
-          ),
-        ),
-      ),
+      title: 'DeliMeals',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: CategoriesScreen(),
     );
   }
 }
