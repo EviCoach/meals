@@ -1,7 +1,8 @@
 import "package:flutter/material.dart";
-import 'package:meals_app/screens/meal_detail_screen.dart';
+
+import './screens/meal_detail_screen.dart';
+import 'package:meals_app/screens/tabs_screen.dart';
 import './screens/category_meals_screen.dart';
-import './screens/categories_screen.dart';
 
 main() => runApp(MyApp());
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: '/',
         routes: {
-          '/': (ctx) => CategoriesScreen(),
+          '/': (ctx) => TabsScreen(),
           CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
           MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
         } // marks the root screen of your app
