@@ -26,6 +26,7 @@ class Meal {
   final bool isLactoseFree;
   final bool isVegan;
   final bool isVegetarian;
+  // bool isFavorite;
 
 // using named arguments because we have a lot of properties
   const Meal({
